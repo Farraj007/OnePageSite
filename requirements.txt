@@ -1,12 +1,6 @@
-
-diagnostic-aggregator==4.0.0
-diagnostic-msgs==4.2.4
-diagnostic-updater==4.0.0
-dj-database-url==2.2.0
 Django==5.1.1
 domain-coordinator==0.10.0
 example-interfaces==0.9.3
-
 geodesy==1.0.6
 geographic-msgs==1.0.6
 geometry-msgs==4.2.4
