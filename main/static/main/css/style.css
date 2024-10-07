@@ -1,0 +1,78 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.cool-header {
+    background: url("{% static 'main/images/header-bg.jpg' %}") no-repeat center center/cover;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cool-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Gradient overlay */
+    z-index: 1;
+}
+
+.cool-header .header-content {
+    position: relative;
+    z-index: 2;
+}
+
+.cool-header h1 {
+    font-size: 3rem;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 10px;
+}
+
+.cool-header p {
+    font-size: 1.5rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.countdown-item {
+    text-align: center;
+}
+
+.countdown-number {
+    font-size: 2rem;
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.countdown-label {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.flip {
+    animation: flip 0.5s;
+}
+
+@keyframes flip {
+    0% { transform: rotateX(0); }
+    50% { transform: rotateX(180deg); }
+    100% { transform: rotateX(360deg); }
+}
+.gif-container {
+    margin-bottom: 20px; 
+}
