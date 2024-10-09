@@ -41,13 +41,15 @@ html {
 }
 
 .countdown-timer {
-    display: inline-block;
+    display: block;
     justify-content: center;
     align-items: center;
     gap: 20px;
     font-family: 'Arial', sans-serif;
 }
-
+#days{
+    display:inline-block
+}
 .countdown-item {
     text-align: center;
 }
